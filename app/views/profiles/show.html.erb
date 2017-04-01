@@ -42,7 +42,8 @@
 
 <p>
   <strong>Picture:</strong>
-  <%= @profile.picture %>
+
+<%= image_tag(@profile.picture_url(:thumbnail), :width => 50, :height => 50) %>
 </p>
 
 <%= link_to 'Edit', edit_profile_path(@profile) %> |
